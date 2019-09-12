@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/Home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home"/>
+
+    <item
+        android:id="@+id/Men"
+        android:icon="@drawable/icons8_man_30"
+        android:title="Men"/>
+
+    <item
+        android:id="@+id/Women"
+        android:icon="@drawable/icons8_women_30"
+        android:title="Women"/>
+
+    <item
+        android:id="@+id/Kids"
+        android:icon="@drawable/icons8_baby_30"
+        android:title="Kids"/>
+
+</menu>

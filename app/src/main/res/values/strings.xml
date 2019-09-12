@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Java-Android-MVP-Project</string>
+    <string name="title_home">JSOS Home</string>
+    <string name="Men">JSOS Men</string>
+    <string name="Women">JSOS Women</string>
+    <string name="Kids">JSOS Kids</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
