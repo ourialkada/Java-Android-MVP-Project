@@ -12,6 +12,7 @@ import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.ouri.java_android_mvp_project.MVP.DetailedShirt.DetailedShirtPresentor;
 import com.ouri.java_android_mvp_project.MVP.DetailedShirt.DetailedShirtView;
@@ -71,5 +72,7 @@ public class DetailedShirtActivity extends AppCompatActivity implements Detailed
     @Override
     public void Failed(String exception) {
 
+        Toast.makeText(this, exception, Toast.LENGTH_SHORT).show();
+        this.onBackPressed();
     }
 }

@@ -26,10 +26,17 @@ public class DetailedShirtPresentor implements DetailedShirtModel {
 
     @Override
     public void setData(String json) {
+        Log.d("FUCK", "setData: " + json);
         JSONParser parser = new JSONParser();
         try {
             JSONObject JSON = (JSONObject) parser.parse(json);
-            detailedShirtView.Success(JSON.get("name").toString(),JSON.get("description").toString(),JSON.get("price").toString(),JSON.get("quantity").toString(),JSON.get("image").toString());
+            if (JSON.get("status") == null) {
+                detailedShirtView.Success(JSON.get("name").toString(), JSON.get("description").toString(), JSON.get("price").toString(), JSON.get("quantity").toString(), JSON.get("image").toString());
+            }
+            else
+            {
+                detailedShirtView.Failed(JSON.get("status").toString());
+            }
         } catch (ParseException e) {
             e.printStackTrace();
         }

@@ -57,7 +57,7 @@ public class MainRecyclerViewAdapter extends RecyclerView.Adapter<MainRecyclerVi
         holder.description.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String s =   utils.getDocument(shirts.get(position).getType(),shirts.get(position).getID());
+                String s =   utils.getDocument(shirts.get(position).getType(),shirts.get(position).getID(),context);
                 maineView.clicked(s);
 
             }
@@ -66,7 +66,7 @@ public class MainRecyclerViewAdapter extends RecyclerView.Adapter<MainRecyclerVi
         holder.title.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String s =   utils.getDocument(shirts.get(position).getType(),shirts.get(position).getID());
+                String s =   utils.getDocument(shirts.get(position).getType(),shirts.get(position).getID(),context);
                 maineView.clicked(s);
 
 
@@ -75,7 +75,7 @@ public class MainRecyclerViewAdapter extends RecyclerView.Adapter<MainRecyclerVi
         holder.image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String s =   utils.getDocument(shirts.get(position).getType(),shirts.get(position).getID());
+                String s =   utils.getDocument(shirts.get(position).getType(),shirts.get(position).getID(),context);
                 maineView.clicked(s);
 
 
